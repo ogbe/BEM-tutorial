@@ -1,0 +1,69 @@
+/* Make sure you're more specific, do not select multiple classes like this
+.user .user__name.
+Rather, select the class itself, except if you want to modify a block
+element with children like this
+.user--dark-theme .user__photo */
+
+.user__name, .button {
+    text-transform: capitalize;
+}
+
+.user {
+    width: 135px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    float: left;
+    margin-right: 10px;
+}
+
+.user--dark-theme {
+    background: #222222;
+}
+
+.user--dark-theme .user__photo {
+    box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.4);
+}
+
+.user--dark-theme .user__name {
+    color: #ffffff;
+}
+
+.user__photo {
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.35);
+    padding-top: 5px;
+}
+
+.user__name {
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px 0;
+}
+
+.button {
+    width: 100%;
+    color: #222222;
+    background: #cccccc;
+    padding: 7px 12px;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.button:active {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.button--dark-theme:active {
+    box-shadow: 0 2px 2px rgba(255, 255, 255, 0.3);
+}
+
+.button--primary {
+    background: #2388e1;
+    color: #ffffff;
+}

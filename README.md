@@ -1,2 +1,2 @@
-# BEM-tutorial
-My first application built with BEM conventions
+# BEM
+My first BEM - Block Element Modifier - project.
